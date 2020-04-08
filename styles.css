@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body, input {
+    margin: 0;
+    font-family: Baskerville, Serif;
+    font-size: 18px;
+}
+
+input {
+    height: 25px;
+    width: 100px;
+    transition: height .35s ease-in-out, width .35s ease-in-out;
+}
+
+input:focus {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin: 0;
+    border: 0;
+    padding: 8px 0 0 0;
+    font-size: 14px;
+}
+
+.formContainer {
+    width: 800px;
+    overflow: auto;
+    margin: 0 auto;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    position: relative;
+}
+
+div, p {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.titleContainer {
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.titleBox {
+    float: left;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    background-color: rgba(255,250,205,0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 14px;
+    border-left: 2px solid rgba(255, 221, 172, 0.37);
+    border-right: 2px solid rgba(255, 221, 172, 0.37);
+    border-top: 2px solid rgba(255, 221, 172, 0.37);
+}
+
+.tilde {
+    font-size: 45px;
+    border: 0;
+    padding: 0;
+    height: 30px
+}
+
+.descriptionBox, .inputBox {
+    float: left;
+    height: 80px;
+    padding: 5px 0;
+}
+
+.descriptionBox {
+    width: 65%;
+}
+
+.blankBox {
+    float: left;
+    height: 100px;
+    width: 42%
+}
+
+.descriptionBox p {
+    float: right;
+    padding-right: 15px;
+}
+
+.inputBox {
+    width: 35%;
+    padding-right: 25px;
+    position: relative;
+}
+
+.buttonBox p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.buttonBox {
+    height: 100px;
+    width: 58%;
+    padding-right: 30%;
+}
+
+.theButton {
+    background-color: lemonchiffon;
+    width: 100px;
+}
+
+.success {
+    color: green;
+}
+
+.resultsContainer {
+    float: left;
+    width: 100%;
+    height: fit-content;
+    border: 0;
+    border-radius: 20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0.01;
+    max-height: 0;
+    transition: opacity 1.2s, max-height 0s 1s;
+    margin-top: 10px;
+}
+
+
+.resultsBody {
+    width: 100%;
+    overflow: auto;
+    background: rgba(220, 220, 220, 0.26);
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 1px solid gainsboro;
+}
+
+.resultsDesc, .resultsData {
+    float: left;
+    height: 40px;
+    width: 50%;
+}
+
+.resultsDesc p {
+    float: right;
+    padding-right: 10px;
+}
+
+.visible {
+    opacity: 1;
+    max-height: 999px;
+    transition: opacity 1.2s, max-height 0s;
+}
+
+.resultsTitle {
+    background-color: rgba(255, 221, 172, 0.37);
+    padding: 9px 30px 10px;
+    text-align: center;
+    font-size: 26px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
